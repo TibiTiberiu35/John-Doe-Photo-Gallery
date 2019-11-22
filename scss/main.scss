@@ -1,0 +1,261 @@
+@import "pages/gallery";
+@import "pages/adventures";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/photo-gallery";
+@import "pages/adventures-post";
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: Source Sans Pro SemiBold;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: Source Sans Pro;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  color: #333;
+  font-family: Source Sans Pro SemiBold;
+  margin: 0 auto;
+  display: flex;
+  .logo {
+    padding: 15px 0;
+    img {
+      width: 100px;
+    }
+  }
+  div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      font-size: 1.2rem;
+      li {
+        align-items: center;
+        height: 100%;
+        padding: 0.5em 1em;
+        a {
+          color: #111111;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-activ {
+  border: 2px solid #111111;
+}
+
+.about-section {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    span {
+      border: 5px solid #111111;
+    }
+  }
+
+  .about-content {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    p {
+      margin: auto;
+      margin-right: 2em;
+    }
+    img {
+      height: 300px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px #aaaaaa;
+    }
+  }
+}
+
+.title-and-intro {
+  text-align: center;
+  margin: 50px 0;
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+  }
+  p {
+    color: #222222;
+  }
+}
+
+.newsletter-section {
+  background: #111111;
+  color: #ffffff;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    width: 800px;
+    h2 {
+      font-size: 1.8em;
+      margin-top: -10px;
+    }
+
+    form {
+      label {
+        display: block;
+        font-weight: bold;
+        font-size: 1em;
+      }
+
+      input {
+        margin-top: 5px;
+        background: #ffffff;
+        padding-left: 20px;
+        height: 50px;
+        width: 500px;
+        border: none;
+        color: #111111;
+        font-weight: bold;
+      }
+
+      button {
+        margin-top: 5px;
+        background: #ffffff;
+        border: none;
+        height: 52px;
+        width: 200px;
+        color: #111111;
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.most-recent-photos {
+  width: 80%;
+  margin: auto;
+  #items-recent-photos {
+    display: flex;
+    justify-content: space-between;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+  .img-div {
+    display: inline-flex;
+    .stats {
+      display: flex;
+      position: absolute;
+      height: 50px;
+      margin-left: 167px;
+      padding: 0 10px;
+      background: rgba($color: #111111, $alpha: 1);
+      color: #ffffff;
+      p {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.most-recent-adventures {
+  margin: auto;
+  margin-top: 100px;
+  h2 {
+    width: 80%;
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+  .two-adventures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    h3 {
+      font-size: 2em;
+      font-weight: 500;
+    }
+    a {
+      color: #dddddd;
+      margin-top: 50px;
+    }
+    .recent-adventure {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 50px 100px;
+      height: 500px;
+    }
+    .adventure-one {
+      background: url("../img/recent-adventures/card-bg-1.jpg") no-repeat center /
+        cover;
+    }
+    .adventure-two {
+      background: url("../img/recent-adventures/card-bg-2.jpg") no-repeat center /
+        cover;
+    }
+  }
+}
+
+.comments {
+  width: 80%;
+  margin: 30px auto;
+  .comments-nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: Source Sans Pro SemiBold;
+    font-size: 1.3em;
+    .login-signup {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 200px;
+      font-size: 0.8em;
+    }
+  }
+  .comments-on-post {
+    margin-top: 40px;
+    #no-posts {
+      text-align: center;
+      font-size: 1.1em;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 120px;
+  justify-content: space-between;
+  p {
+    align-self: center;
+  }
+}

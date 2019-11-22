@@ -1,0 +1,49 @@
+.adventures-post-section {
+  padding: 70px 0;
+  .showcase-post-title {
+    background: url("../../img/adventures/fircussi.jpg") no-repeat center / 100%;
+    color: #ffffff;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    h1 {
+      width: 80%;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+  }
+  .content-social {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 100px auto;
+    .post-content {
+      margin-top: 30px;
+      width: 60%;
+      h2 {
+        margin-top: 50px;
+      }
+    }
+  }
+  .options-post {
+    width: 300px;
+    .social-on-post ul {
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      border-left: 2px solid #111111;
+      border-right: 2px solid #111111;
+    }
+    .likes {
+      display: flex;
+      padding: 0 25px;
+      justify-content: space-between;
+      align-items: center;
+      background: #111111;
+      color: #ffffff;
+    }
+  }
+}
